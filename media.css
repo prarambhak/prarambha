@@ -1,0 +1,170 @@
+        /* CSS FOR FONT */
+        @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+        /* CSS FOR FONT */
+
+        nav ul{
+            list-style-type: none;
+            float: right;
+        }
+
+        *{
+            margin: 0px;
+            text-align: justify;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            padding-top: 55px;
+            background: rgb(100, 100, 100);
+            color: rgb(224, 221, 221);
+        }
+        i{
+            color: rgb(0, 0, 0);
+        }
+
+        nav{
+            background: rgb(17,87,135);
+            background: linear-gradient(90deg, rgba(17,87,135,1) 9%, rgba(0,202,239,1) 50%, rgba(17,87,135,1) 100%);
+            height: 55px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        img{
+            margin: 0px, 100px;
+            height: 54px;
+            font-size: 25px;
+            margin-left: 70px;
+        }
+
+        nav ul li{
+            display: inline-block;
+            line-height: 55px;
+            font-size: 25px;
+            margin-right: 15px;
+        }
+
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav_bar{
+            display: inline;
+            line-height: 55px;
+            font-size: 25px;
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+        }
+
+        .nav_bar:hover{
+            transform: scale(1.1);
+        }
+
+        .checkbtn{
+            font-size: 30px;
+            color: white;
+            line-height: 55px;
+            float: right;
+            margin-right: 40px;
+            display: none;
+        }
+
+        @media (max-width:1000px){
+
+            #logo{
+                padding-left: 50px;
+            }
+
+            nav ul li a{
+                font-size: 20px;
+            }
+
+        }
+
+        #logo{
+            background-color: transparent;
+            border: none;
+        }
+
+        #logo:hover{
+            transform: scale(0.9);
+        }
+        
+        @media(max-width: 1000px){
+
+            .checkbtn{
+                display: inline-block;
+            }
+
+            ul{
+                position: fixed;
+                top: 55.5px;
+                left: -100%;
+                background: rgba(123,159,242,0.8);
+                height: auto;
+                width: auto;
+                transition: all .5 ease;
+            }
+
+            nav ul li{
+                display: block;
+            }
+
+            #check:checked~ul{
+                left: 0px;
+            }
+
+            section{
+                background-position: center;
+            }
+        }
+
+       #check{
+        display: none;
+       }
+
+       section{   
+        height: auto;
+        margin: 30px;
+        background-image: url(311891-P8RM62-32.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1500px;
+        font-size: 20px;
+       }
+
+       span{
+        display: inline-block;
+        margin-top: 25px;
+       }
+
+       span a{
+        color: rgb(0, 0, 0);
+       }
+
+       h2{
+        text-align: center;
+        font-size: 39px;
+        margin-top: 20px;
+        text-decoration: underline;
+       }
+
+       p{
+        opacity: 1;
+       }
+
+       .a-media{
+        color: rgb(0, 1, 90);
+       }
+
+       .checkbtn{
+        cursor: pointer;
+       }
+       .social-media-image{
+        float: right;
+        height: 150px;
+        margin-left: 0px;
+       }

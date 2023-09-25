@@ -1,0 +1,77 @@
+<!-- Q) Creating a Sign Up form. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="icon" type="image/x-icon" href="prarambha-website-favicon-black.png">
+
+    <link rel="stylesheet" href="signup.css">
+    <title>Sign Up Form</title>
+
+</head>
+
+<body>
+
+    <h2>Sign Up Form</h2> <hr>
+    <div>
+
+    <form action="Post">
+
+        <label for="fname" >First Name: </label>
+        <input placeholder="First Name" type="text" name="fname" id="fname" class="unik"  required><br> <br>
+
+        <label for="lname">Last Name: </label>
+        <input placeholder="Last Name" type="text" name="lname" id="lname" class="unik"  required><br> <br>
+        
+        <label for="bday">Date of Birth: </label>
+        <input type="date" name="bday" id="bday" class="unik" required ><br> <br>
+        
+        <label for="email">Email: </label>
+        <input placeholder="Email" type="text" name="email" id="email" class="unik"  required><br> <br>
+
+        <label for="pssd">Password: </label>
+        <input placeholder="Password" type="password" name="pssd" class="unik" id="myInput" required><br>
+        <input type="checkbox" onclick="myFunction()">Show Password  <br> <br>
+
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" value="M" id="gender" required>Male
+        <input type="radio" name="gender" value="F" id="gender" required>Female <br> <br>
+
+        <label for="country" >Choose your country: </label>
+
+        <select name="country" id="country" required>
+
+            <option value="none">None ❌</option>
+            <option value="c">China</option>
+            <option value="n">Nepal</option>
+            <option value="i">India</option>
+            <option value="p">Pakisthan</option>
+            <option value="a">America</option>
+            <option value="d">Dubai</option>
+            <option value="sk">South Korea </option>
+            <option value="nk">North Korea</option>
+            <option value="af">Afganisthan</option>
+            <option value="au">Australia</option>
+            <option value="nz">New Zealand</option>
+            <option value="ir">Iran</option>
+
+        </select> <br> <br>
+        
+        <label for="checkbox">Choose your file type:</label><br>
+        <input required type="checkbox" id="checkbox" name="myCheckbox" onclick="handleCheckboxClick(this)">Citizenship
+        <input required type="checkbox" id="checkbox" name="myCheckbox" onclick="handleCheckboxClick(this)">Passport <br>
+        <input required type="checkbox" id="checkbox" name="myCheckbox" onclick="handleCheckboxClick(this)">Voter ID
+        <input required type="checkbox" id="checkbox" name="myCheckbox" onclick="handleCheckboxClick(this)">Driving License <br> <br>
+
+        <button type="submit"><a href="home.html">Sign Up</a></button>
+
+    </form>
+
+ </div>
+
+    <script src="signup.js"></script>
+
+</body>
+</html>
