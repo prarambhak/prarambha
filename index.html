@@ -83,6 +83,49 @@
 
     </section>
 
+    <div class="skills-of-me-container">
+        <div class="container-skills">
+            <h2 class="my-skills">My Skills</h2>
+            <div class="bar-1">
+            <div class="title">HTML5</div>
+            <div class="bar" data-width="65%">
+              <div class="bar-inner">
+                
+              </div>
+              <div class="bar-percent">65%</div>
+            </div>
+            </div>
+            <div class="bar-1">
+            <div class="title" style="color: #084c61;">CSS3</div>
+            <div class="bar" data-width="85%">
+              <div class="bar-inner" style="background: #084c61;">
+                
+              </div>
+              <div class="bar-percent">85%</div>
+            </div>
+            
+            </div>
+            <div class="bar-1">
+            <div class="title" style="color: #525252;">Javascript</div>
+            <div class="bar" data-width="95%">
+              <div class="bar-inner" style="background: #525252;">
+                
+              </div>
+              <div class="bar-percent">95%</div>
+            </div>
+            </div>
+            <div class="bar-1">
+            <div class="title" style="color: #5a68a5">jQuery</div>
+            <div class="bar" data-width="75%">
+              <div class="bar-inner" style="background: #5a68a5;">
+                
+              </div>
+              <div class="bar-percent">75%</div>
+            </div>
+            </div>
+          </div>
+    </div>
+
         </div>
                 <div class="footer-bottom footer-container-flex">
 
@@ -179,5 +222,12 @@
                         </div>
                     </div>
                 </div>
+                <script>
+                    $(".bar").each(function(){
+                        $(this).find(".bar-inner").animate({
+                        width: $(this).attr("data-width")
+                        },2000)
+                    });
+                </script>
 </body>
 </html>
