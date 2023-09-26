@@ -261,7 +261,10 @@
       }
 
       .container-skills {
-        margin-top: 20px;
+        margin-top: -10px;
+        background-color: #333;
+        margin-bottom: 1px;
+        padding-bottom: 1px;
       }
       
       .my-skills {
