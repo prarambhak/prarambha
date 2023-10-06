@@ -1,0 +1,494 @@
+ /* CSS FOR FONT */
+ @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Eczar&family=Mate+SC&family=Roboto+Condensed&display=swap');
+
+/* CSS FOR FONT */
+
+nav .ul-nav{
+    list-style-type: none;
+    float: right;
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    padding-top: 55px;
+}
+
+nav{
+    background: rgb(17,87,135);
+    background: linear-gradient(90deg, rgba(17,87,135,1) 9%, rgba(0,202,239,1) 50%, rgba(17,87,135,1) 100%);
+    height: 55px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    
+}
+ #logo img{
+    margin: 0px, 100px;
+    height: 54px;
+    font-size: 25px;
+    margin-left: 70px;
+}
+
+nav .ul-nav .nav-list{
+    display: inline-block;
+    line-height: 55px;
+    font-size: 25px;
+    margin-right: 15px;
+}
+
+nav .ul-nav .nav-list a{
+    text-decoration: none;
+    color: white;
+}
+
+    .nav_bar{
+    display: inline;
+    line-height: 55px;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.nav_bar:hover{
+    transform: scale(1.1);
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    line-height: 55px;
+    float: right;
+    margin-right: 40px;
+    display: none;
+}
+
+@media (max-width:1000px){
+
+    nav .ul-nav .nav-list a{
+        font-size: 20px;
+    }
+
+}
+
+#logo{
+    background-color: transparent;
+    border: none;
+}
+
+#logo:hover{
+    transform: scale(0.9);
+}
+
+@media(max-width: 1000px){
+
+    .checkbtn{
+        display: inline-block;
+    }
+
+    .ul-nav{
+        position: fixed;
+        top: 55.5px;
+        left: -100%;
+        background: rgba(123,159,242,0.9);
+        height: auto;
+        width: auto;
+        transition: all .5 ease;
+    }
+
+
+    i{
+        cursor: pointer;
+    }
+
+    nav .ul-nav .nav-list{
+        display: block;
+    }
+
+    #check:checked~ul{
+        left: 0px;
+    }
+
+}
+
+
+
+
+#check{
+display: none;
+} 
+
+section{
+    background: rgb(71,0,203);
+    background: linear-gradient(90deg, rgba(71,0,203,1) 0%, rgba(0,255,248,1) 100%);
+    background-position: center;
+    height:690px;
+    margin-top: -50px;
+    }
+
+    .flex-item-1 .image-in-fst{
+        height: 500px;
+        border-radius: 20px;
+        margin-left:30px;
+    }
+
+    .flex-item-2{
+        padding-top: 16.5%;
+    }
+
+    .fst{
+        width: 60%;
+        margin: 30px;
+        border-radius: 15px;  
+    }
+
+    .snd{
+        width: 40%;
+    }
+
+    .main-container-flex-about{
+        display: flex;
+        position: relative;
+        background: white;
+        border-radius: 20px;
+        margin: 50px;
+        height: 600px;
+        bottom: -45px;
+        margin-right: 150px;
+        margin-left: 150px;
+        z-index: 1;
+        gap: 30px;
+    }
+
+    .main-text-me{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 25px;
+    }
+
+    .main-name-heading{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 40px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    
+    .about-myself{
+        margin-top: 15px;
+        font-size: 18px;
+        font: weight 800px;
+        text-transform: uppercase;
+    }
+
+    .my-main-text-myself{
+        font-size: 17px;
+        margin-top: 15px;
+        text-align: justify;
+        margin-right: 15px;
+    }
+
+    .i-am-also .main-text{
+        font-size: 30px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .webdev{
+        font-size: 20px;
+    }
+
+    .software-eng{
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    .c-prog{
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    .animator{
+        font-size: 20px;
+        margin-top: 2px;
+    }
+
+    .main-works ul li{
+        list-style-type:square;
+    }
+
+
+#head{
+    margin-top: 1em;
+    font-size: 3.2em;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+#img{
+margin: 0px, 100px;
+height: 54px;
+font-size: 25px;
+margin-left: 70px;
+}
+
+.footer-container-flex{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.ffia{
+    margin-left: 23.5px;
+}
+
+.purpose{
+    font-size: 25px;
+    border-bottom: 3px solid blue;
+    width: 329.5px;
+    margin-bottom: 15px;
+    margin-top: 9px;
+    margin-right:65px;
+}
+
+.main-purpose-text{
+    font-size: 17.5px;
+    text-align: justify;
+}
+
+.about-myself{
+    margin-top: 15px;
+    font-size: 18px;
+    font: weight 800px;
+    text-transform: uppercase;
+}
+.footer-bottom {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    height: 205px;
+    padding-bottom: 30px;
+  }
+
+  .ffi2, .ffi3{
+    width: 30%;
+  }
+
+  .about-contact-favorites-more{
+    margin-left: -40px;
+  }
+
+  .ffi1{
+    width: 40%;
+    margin-left: 5%;
+  }
+
+  .a-footer{
+    text-decoration: none;
+    display: inline-block;
+ }
+ .a-footer::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: blue;
+    transition: width 0.3s ease;
+ }
+ .a-footer:hover::after{
+    width: 100%;
+ }
+
+  li.li-myself{
+    margin-bottom: 16px;
+    border-bottom: 3px solid blue;
+    width: 65px;
+    font-size: 25px;
+    margin-left: 24px;
+
+  }
+
+  .myself-flex-footer{
+    /* margin-left: 65px; */
+    font-size: 25px;
+    margin-top: -10px;
+  }
+
+  .unordered-footer{
+    margin-top: 20px;
+    margin-left: 12%;
+  }
+
+  .list-footer{
+    list-style-type: none;
+    font-size: 19px;
+    margin-left: 10%;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    
+  }
+
+  a.contact-footer.a-footer{
+    margin:25px 65px 0px;
+  }
+
+       .a-ul-c{
+        text-decoration: none;
+        display: inline-block;
+     }
+     .a-ul-c::after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background: blue;
+        transition: width 0.3s ease;
+     }
+     .a-ul-c:hover::after{
+        width: 100%;
+     }
+
+     .a-ul-pro{
+        margin-top: 10px;
+     }
+
+      .li3{
+        margin-top: -15px;
+      }
+
+      .li1:hover{
+        width: 50px;
+      }
+      .li2:hover{
+        width: 53px;
+      }
+      .li3:hover{
+        
+        width: 65.5px;
+      }
+      .li4:hover{
+        
+        width: 75px;
+      }
+      .li5:hover{
+        
+        width: 42px;
+      }
+      
+      .a-footer{
+        text-decoration: none;
+        margin-left: 65px;
+      }
+
+@media screen and (max-width: 800px){
+
+    section{
+        margin-left: -500px;
+        height: 679px;
+    }
+}
+
+.contact-footer{
+    margin-left: -85px;
+}
+
+.li-contact{
+    list-style-type: none;
+    font-size: 25px;
+    border-bottom: 3px solid blue;
+    width: 83px;
+    margin-bottom: 17px;
+    margin-top: 10px;
+}
+
+.li-contacts{
+    list-style-type: none;
+    font-size: 19px;
+    margin-top:10px;
+    color: white;
+
+}
+.ul-contact{
+    margin-top: -10px;
+}
+
+.li-contacts:hover{
+    /* border-bottom: 3px solid blue; */
+    cursor: pointer;
+}
+
+.ph-no:hover{
+    width:80.5px;
+}
+.email-ul:hover{
+    width: 53.5px;
+}
+.social-ul{
+   width: 100.5px; 
+}
+
+.contacts .ul-contact a{
+    text-decoration: none;
+}
+
+.li-products{
+    list-style-type: none;
+    font-size: 25px;
+    border-bottom: 3px solid blue;
+    width: 286.5px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+
+.more-products-footer{
+    margin-left: -90px;
+}
+
+.more-products-main-ul-li .products-main-ul a{
+    text-decoration: none;
+}
+
+.products-main-li{
+    list-style-type: none;
+    color: white;
+    font-size: 19px;
+}
+
+.signup-li:hover{
+    
+    width: 108.5px;
+}
+
+.nepal-li:hover{
+    
+    width: 48px;
+}
+
+.upcome:hover{
+    
+    width: 102.2625px;
+}
+
+.a-ul-pro{
+    text-decoration: none;
+    display: inline-block;
+ }
+ .a-ul-pro::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: blue;
+    transition: width 0.3s ease;
+ }
+ .a-ul-pro:hover::after{
+    width: 100%;
+ }
