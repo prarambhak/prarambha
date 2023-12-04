@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="home.css">
     <link rel="icon" type="image/x-icon" href="other files/prarambha-website-favicon-black.png">
 </head>
-<body>
+<body onload="myfunction()"> 
+
+    <!-- --------------------------------------------------------Preloader----------------------------------------------------------- -->
+
+    <div id="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+    </div>
+
+    <!-- --------------------------------------------------------Preloader----------------------------------------------------------- -->
 
     <nav>
         <input type="checkbox" id="check">
@@ -183,5 +192,13 @@
                         </div>
                     </div>
                 </div>
+
+                <script>
+                    var preloader = document.getElementById('loading-wrapper');
+
+                    function myfunction(){
+                        preloader.style.display = "none";
+}
+                </script>
 </body>
 </html>
