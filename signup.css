@@ -1,65 +1,95 @@
-	@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Mate+SC&display=swap');
-
-	@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Eczar&family=Mate+SC&display=swap');
-
-html{
-	background: rgb(17,87,135);
-	background: linear-gradient(360deg, rgba(17,87,135,1) 9%, rgba(0,202,239,1) 50%, rgba(17,87,135,1) 100%);
-	background-repeat: no-repeat;
-	background-size: 100%;;
-	height: 100%;
+body {
+	font-family: Arial, sans-serif;
+	background-color: #DCF2F1; /* Background color */
+	color: #0F1035; /* Text color */
+}
+form {
+	max-width: 400px;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #365486; /* Form background color */
+	position: absolute;
+	top: 53.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 4px 4px 4px rgba(127, 199, 217, 0.8);
 }
 
-div{
-	width: 400px;
-	margin-left: auto;
-	padding: 8px;
-	font-family: 'Crimson Text', serif;
-	font-family: 'Mate SC', serif;
-	height: auto;
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #7FC7D9; /* Input field border color */
+	border-radius: 4px;
+	box-sizing: border-box;
+	background-color: #DCF2F1; /* Input field background color */
+	color: #0F1035; /* Input field text color */
+}
+input[type="submit"] {
+	background-color: #7FC7D9; /* Submit button background color */
+	color: #0F1035; /* Submit button text color */
+	padding: 14px 20px;
+	margin: 8px 0;
 	border: none;
-	margin: auto;
-	font-size: large;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 100%;
+	transition: 0.1s ease-in-out 0.1s;
+	margin-top: 15px;
+}
+input[type="submit"]:hover {
+	background-color: #0F1035; /* Submit button hover background color */
+	color: #DCF2F1;
 }
 
-input[type=text],input[type=email],
-input[type=date],input[type=password]
-{
-  width: 100%;
-  height: 20px;
-  border: none;
-  border-bottom: 2px solid white;
-  background: skyblue;
+input,select{
+	outline : 1px solid #365486;
+	color: #0F1035;
+	font-size: 1rem;
 }
 
-button{
-	display: block;
-	width: 15.%;
-	border-radius:7px; ;
-	background-color: transparent;
-	height: 30px;
-	cursor:pointer;
-	margin: auto;
-	font-family: 'Crimson Text', serif;
-	font-family: 'Mate SC', serif;
-	font-size: larger;
+select{
+	cursor: pointer;
 }
-button:hover{
-	background-color: #56d8e4;
-	border: none;
-	border-radius: 7px;
+
+label{
+	color: #DCF2F1;
 }
-h2{
-	text-align: center;
-	font-family: 'Crimson Text', serif;
-	font-family: 'Eczar', serif;
-	font-family: 'Mate SC', serif;
-	font-size: xx-large;
+
+input[type="date"]{
+	font-size: 1rem;
 }
-form{
-	height: 100%;
+
+.password-toggle {
+	position: relative;
 }
-a{
-	color: black;
-	text-decoration: none;
+.password-toggle input[type="password"] {
+	padding-right: 40px;
+}
+.password-toggle .toggle-password {
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: #0F1035; /* Password toggle button color */
+}
+#gender {
+	cursor: pointer;
+	color: #0F1035; /* Gender label color */
+}
+.title{
+	margin: 0px 0 10px -19px;
+padding: 15px;
+background-color: #59ccc4;
+color: #fff;
+font-size: 20px;
+border-radius: 5px;
+text-align: center;
+width: 93%;
+position: absolute;
+top: -53px;
 }
