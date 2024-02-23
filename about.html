@@ -3,204 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Prarambha</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://use.fontawesome.com/fed7449826.js"></script>
-    <link rel="stylesheet" href="about.css">
+    <title>Prarambha Kafle</title>
+    <link rel="stylesheet" href="home.css">
     <link rel="icon" type="image/x-icon" href="other files/prarambha-website-favicon-black.png">
 </head>
-<body>
+<body onload="myfunction()">
 
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
+    <!-- --------------------------------------------------------Preloader----------------------------------------------------------- -->
 
-    <label>
+    <div id="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+    </div>
 
-        <button id="logo"><a href="index.html">
-        <img src="other files/prarambha-high-resolution-logo-black-on-transparent-background.png" >
-        </a>
-        </button>
+    <!-- --------------------------------------------------------Preloader----------------------------------------------------------- -->
 
-    </label>
-
-        <ul class="ul-nav">
-            
-            <li class="nav-list"><button class="nav_bar"><a href="about.html" target="_blank">ABOUT</a></button></li>
-            <li class="nav-list"><button class="nav_bar"><a href="media.html" target="_blank">CONTACT</a></button></li>
-            <li class="nav-list"><button class="nav_bar"><a href="favorite.html" target="_blank">FAVORITES</a></button></li>
-            <li class="nav-list"><button class="nav_bar"><a href="#li5">MORE</a></button></li>
-
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="other files/prarambha-high-resolution-logo-white-transparent.png" alt="Logo Image">
+        </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="a-nav">Home</a></li>
+            <li><a href="about.html" class="a-nav">About</a></li>
+            <li><a href="#" class="a-nav">Contact</a></li>
+            <li><a href="#" class="a-nav">Blog</a></li>
+            <li><a href="#li5" class="a-nav">More</a></li>
+            <li><a href="#" style="text-decoration: none;"><button class="login-button" href="#">Login</button></a></li>
+            <li><a href="signup.html" style="text-decoration: none;"><button class="join-button" href="#">Sign Up</button></a></li>
         </ul>
-
     </nav>
 
-        <section>
-            
-            <div class="main-container-flex-about">
-                <div class="items-flex fst">
-                    <div class="flex-item-1">
-                        <img src="other files/stevejobs.1419962539.jpg" alt="" class="image-in-fst" style="box-shadow: 5px 10px 10px rgba(0,0,0,0.2);;">
-                    </div>
-                </div>
-                <div class="items-flex snd">
-                    <div class="flex-item-2">
-                        <div class="main-text-me">
-                            <div class="hello-everyone">
-                                <!-- Hello Everybody, I am -->
-                            </div>
-                            <div class="main-name-heading">
-                                <u>About Me</u>
-                                
-                            </div>
-                            <div class="about-myself">
-                                Student of Computer Engineer <br>
-                                <div class="myclass-about-myself">
-                                    Class: 9
-                                </div>
-                            </div>
-                            <div class="my-main-text-myself">
-                                I'm a ninth-grader passionate about computer engineering. Eager to explore the world of coding and technology, I'm on a journey to develop innovative solutions and shape the future.
-                            </div>
-                            <div class="i-am-also">
-                                <div class="main-text">
-                                    I am also:-
-                                </div>
-                                <div class="main-works">
-                                
-                                    <ul>
-                                        <li>
-                                            <div class="webdev">
-                                                WEB DEVELOPER
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="software-eng">
-                                                SOFTWARE ENGINEER
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="c-prog">
-                                                C-PROGRAMMER
-                                            </div>
-                                        </li>
-                                        
-                                        <li>
-                                            <div class="animator">
-                                                3D-ANIMATOR
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-
-        </section>
-        
-
-        <div class="footer-bottom footer-container-flex">
-
-            <div class="footer-flex-items ffia" style="width: 30%;">
-                <div class="purpose">
-                    Purpose of Making This Website
-                </div>
-                <div class="main-purpose-text">
-                    I created this website about myself as a school project, finding joy and entertainment in the process. It serves as a creative outlet to share my passions, experiences, and showcase my skills.
-                </div>
-            </div>
-            
-            <div class="footer-flex-items ffi1">
-               
-                <div class="about-contact-favorites-more">
-                    <ul class="unordered-footer">
-                        <div class="myself-flex-footer">
-                            <ul>
-                                <li class="li-myself" style="list-style-type: none;" >Myself</li>
-                            </ul> 
-                        </div>
-                        <a href="home.html" class="home-footer a-footer" target="_blank">
-                            <li class="list-footer li1" style="margin-top: 0px;">Home</li>
-                        </a> <br>
-                        <a href="about.html" class="about-footer a-footer" target="_blank">
-                            <li class="list-footer li2">About</li>
-                        </a> <br>
-                        <a href="media.html" class="contact-footer a-footer" target="_blank">
-                            <li class="list-footer li3" >Contact</li>
-                        </a> <br>
-                        <a href="favorite.html" class="favorites-footer a-footer" target="_blank">
-                            <li class="list-footer li4">Favorites</li>
-                        </a> <br>
-                        <a href="#li5" class="more-footer a-footer">
-                            <li class="list-footer li5" id="li5">More</li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-flex-items ffi2" style="margin-left: 7%;">
-                <div class="contact-footer">
-                    <div class="contact-head" >
-                        <ul class="contact-ul">
-                            
-                            <li class="li-contact">Contact</li>
-                        </ul> 
-                    </div>
-                    <div class="contacts">
-                        <ul class="ul-contact">
-                            <a href="#ph-svg" class="ph-no-ul a-ul-c">
-                                <li class="li-contacts ph-no">Phone no.</li>
-                            </a> <br>
-                            <a href="#mail-svg" class="mail-ul a-ul-c">
-                                <li class="li-contacts email-ul">E-mail</li>
-                            </a> <br>
-                            <a href="media.html" class="media-ul a-ul-c" target="_blank">
-                                <li class="li-contacts social-ul">Social Media</li>
-                            </a> <br>
-                            <a href="" class="a-ul-c"><li class="li-contacts"></li></a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-flex-items ffi3">
-                <div class="more-products-footer">
-                    <div class="more-products-head">
-                        <ul class="ul-products">
-                            <li class="li-products">
-                                More Products Made by Me
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="more-products-main-ul-li">
-                        <ul class="products-main-ul">
-                            <a href="signup.html" class="signup-more-products a-ul-pro">
-                                <li class="products-main-li signup-li" style="margin-top: -8px;">Sign Up Form</li> 
-                            </a> <br>
-                            <a href="nepal.html" class="nepal-more-products a-ul-pro">
-                                <li class="products-main-li nepal-li">Nepal</li>
-                            </a> <br>
-                            <a href="home.html" class="upcoming a-ul-pro">
-                                <li class="products-main-li upcome">(Up Coming)</li>
-                            </a> <br>
-                            <a href="home.html" class="upcoming a-ul-pro">
-                                <li class="products-main-li upcome">(Up Coming)</li>
-                            </a> 
-                            <br><a href="home.html" class="upcoming a-ul-pro">
-                                <li class="products-main-li upcome">(Up Coming)</li>
-                            </a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
         </div>
-</body>
-</html>
+                <div class="footer-bottom footer-container-flex">
 
-    
+                    <div class="footer-flex-items ffia" style="width: 30%;">
+                        <div class="purpose">
+                            Purpose of Making This Website
+                        </div>
+                        <div class="main-purpose-text">
+                            I created this website about myself as a school project, finding joy and entertainment in the process. It serves as a creative outlet to share my passions, experiences, and showcase my skills.
+                        </div>
+                    </div>
+                    
+                    <div class="footer-flex-items ffi1">
+                       
+                        <div class="about-contact-favorites-more">
+                            <ul class="unordered-footer">
+                                <div class="myself-flex-footer">
+                                    <ul>
+                                        <li class="li-myself" style="list-style-type: none;" >Myself</li>
+                                    </ul> 
+                                </div>
+                                <a href="home.html" class="home-footer a-footer" target="_blank">
+                                    <li class="list-footer li1" style="margin-top: 0px;">Home</li>
+                                </a> <br>
+                                <a href="about.html" class="about-footer a-footer" target="_blank">
+                                    <li class="list-footer li2">About</li>
+                                </a> <br>
+                                <a href="media.html" class="contact-footer a-footer" target="_blank">
+                                    <li class="list-footer li3" >Contact</li>
+                                </a> <br>
+                                <a href="favorite.html" class="favorites-footer a-footer" target="_blank">
+                                    <li class="list-footer li4">Blog</li>
+                                </a> <br>
+                                <a href="#li5" class="more-footer a-footer">
+                                    <li class="list-footer li5" id="li5">More</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-flex-items ffi2" style="margin-left: 7%;">
+                        <div class="contact-footer">
+                            <div class="contact-head" >
+                                <ul class="contact-ul">
+                                    
+                                    <li class="li-contact">Contact</li>
+                                </ul> 
+                            </div>
+                            <div class="contacts">
+                                <ul class="ul-contact">
+                                    <a href="#ph-svg" class="ph-no-ul a-ul-c">
+                                        <li class="li-contacts ph-no">Phone no.</li>
+                                    </a> <br>
+                                    <a href="#mail-svg" class="mail-ul a-ul-c">
+                                        <li class="li-contacts email-ul">E-mail</li>
+                                    </a> <br>
+                                    <a href="media.html" class="media-ul a-ul-c" target="_blank">
+                                        <li class="li-contacts social-ul">Social Media</li>
+                                    </a> <br>
+                                    <a href="" class="a-ul-c"><li class="li-contacts"></li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-flex-items ffi3">
+                        <div class="more-products-footer">
+                            <div class="more-products-head">
+                                <ul class="ul-products">
+                                    <li class="li-products">
+                                        More Products Made by Me
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more-products-main-ul-li">
+                                <ul class="products-main-ul">
+                                    <a href="signup.html" class="signup-more-products a-ul-pro">
+                                        <li class="products-main-li signup-li" style="margin-top: -8px;">Sign Up Form</li> 
+                                    </a> <br>
+                                    <a href="nepal.html" class="nepal-more-products a-ul-pro">
+                                        <li class="products-main-li nepal-li">Nepal</li>
+                                    </a> <br>
+                                    <a href="home.html" class="upcoming a-ul-pro">
+                                        <li class="products-main-li upcome">(Up Coming)</li>
+                                    </a> <br>
+                                    <a href="home.html" class="upcoming a-ul-pro">
+                                        <li class="products-main-li upcome">(Up Coming)</li>
+                                    </a> 
+                                    <br><a href="home.html" class="upcoming a-ul-pro">
+                                        <li class="products-main-li upcome">(Up Coming)</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          <script src="default.js"></script>     
+          <script src="nav.js"></script> 
 </body>
 </html>

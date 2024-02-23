@@ -1,102 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://use.fontawesome.com/fed7449826.js"></script>
-    <title>Favorites</title>
-    <link rel="stylesheet" href="favorite.css">
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"> -->
+    <title>Prarambha Kafle</title>
+    <link rel="stylesheet" href="home.css">
     <link rel="icon" type="image/x-icon" href="other files/prarambha-website-favicon-black.png">
 </head>
-<body>
+<body onload="myfunction()">
 
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fa fa-bars"></i>
-        </label>
+    <!-- --------------------------------------------------------Preloader----------------------------------------------------------- -->
 
-    <label>
+    <div id="loading-wrapper">
+        <div id="loading-text">LOADING</div>
+        <div id="loading-content"></div>
+    </div>
 
-        <button id="logo"><a href="index.html">
-        <img src="other files/prarambha-high-resolution-logo-black-on-transparent-background.png" >
-        </a>
-        </button>
+    <!-- --------------------------------------------------------Preloader----------------------------------------------------------- -->
 
-    </label>
-
-        <ul>
-            
-            <li><button class="nav_bar"><a href="about.html" target="_blank">ABOUT</a></button></li>
-            <li><button class="nav_bar"><a href="media.html" target="_blank">SOCIAL MEDIA</a></button></li>
-            <li><button class="nav_bar"><a href="favorite.html" >FAVORITES</a></button></li>
-            <li><button class="nav_bar"><a href="signup.html" target="_blank">SIGN UP</a></button></li>
-
-        </ul>
-
-    </nav>
-    
-    <h2 id="top">My Favorites</h2>
-
-    <section>
-            
-
-        <p>
-            <img id="cricket_fav" src="other files/cricket.jpg" alt="">
-        One of my favorite pastimes is playing cricket. The thrill of the game, the camaraderie with 
-        teammates, and the strategic thinking involved make it an exhilarating experience. From the sound 
-        of leather on willow to the rush of taking a wicket or hitting a boundary, every aspect of cricket fills me
-        with excitement. Whether it's a friendly match with friends or a more competitive game, I find myself
-        completely engrossed in the sport, losing track of time as I immerse myself in the action on the field.</p> 
-
-        <p>
-            <img id="web_fav" src="other files/web.png" alt="">
-        Another passion of mine is practicing web designing in my free time. The world of web design offers
-        endless possibilities for creativity and innovation. I love exploring new design trends, experimenting
-        with color palettes, and honing my skills to create visually appealing and user-friendly websites.
-        There's something deeply satisfying about starting with a blank canvas and gradually transforming
-        it into a functional and aesthetically pleasing digital platform. Web designing allows me to combine 
-        my artistic inclinations with my interest in technology, resulting in a fulfilling and productive use
-        of my leisure hours.</p> 
-
-        <p>
-            <img id="guitar_fav" src="other files/guitar.png" alt="">
-        Lastly, strumming the strings of a guitar is yet another source of happiness for me. 
-        The soothing melodies and expressive chords allow me to convey emotions and stories through music. 
-        Playing the guitar is a therapeutic outlet that helps me unwind and connect with my inner creativity.
-        Whether I'm playing alone or jamming with friends, the act of producing harmonious tunes brings a sense 
-        of fulfillment that's hard to put into words. All in all, these favorite activities of mine – cricket, 
-        web designing, cycling, and playing guitar – each contribute uniquely to my life, enriching my experiences 
-        and giving me a well-rounded sense of contentment.</p> 
-
-        <h2 id="bottom">In Short</h2> 
-        <div>
-
-        <table>
-            <tr>
-                <td class="mid">S.N.</td>
-                <td class="mid">Favorites</td>
-                <td class="mid">Importance </td>
-            </tr>
-            <tr>
-                <td class="mid">1.</td>
-                <td class="mid">Cricket</td>
-                <td>Team camaraderie, <br> Fitness, Strategic Thinking.</td>
-            </tr>
-            <tr>
-                <td class="mid">2.</td>
-                <td class="mid">Website <br>Design</td>
-                <td> Good Income,<br> Digital Presence, Creativity.</td>
-            </tr>
-            <tr>
-                <td class="mid">3.</td>
-                <td class="mid">Guitar</td>
-                <td id="last">Creativity, expression, <br> Focus.</td>
-            </tr>
-        </table>
-        
+    <nav class="nav-bar">
+        <div class="logo">
+            <img src="other files/prarambha-high-resolution-logo-white-transparent.png" alt="Logo Image">
         </div>
+        <div class="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="a-nav">Home</a></li>
+            <li><a href="about.html" class="a-nav">About</a></li>
+            <li><a href="#" class="a-nav">Contact</a></li>
+            <li><a href="#" class="a-nav">Blog</a></li>
+            <li><a href="#li5" class="a-nav">More</a></li>
+            <li><a href="#" style="text-decoration: none;"><button class="login-button" href="#">Login</button></a></li>
+            <li><a href="signup.html" style="text-decoration: none;"><button class="join-button" href="#">Sign Up</button></a></li>
+        </ul>
+    </nav>
 
-    </section>
 
+        </div>
+                <div class="footer-bottom footer-container-flex">
+
+                    <div class="footer-flex-items ffia" style="width: 30%;">
+                        <div class="purpose">
+                            Purpose of Making This Website
+                        </div>
+                        <div class="main-purpose-text">
+                            I created this website about myself as a school project, finding joy and entertainment in the process. It serves as a creative outlet to share my passions, experiences, and showcase my skills.
+                        </div>
+                    </div>
+                    
+                    <div class="footer-flex-items ffi1">
+                       
+                        <div class="about-contact-favorites-more">
+                            <ul class="unordered-footer">
+                                <div class="myself-flex-footer">
+                                    <ul>
+                                        <li class="li-myself" style="list-style-type: none;" >Myself</li>
+                                    </ul> 
+                                </div>
+                                <a href="home.html" class="home-footer a-footer" target="_blank">
+                                    <li class="list-footer li1" style="margin-top: 0px;">Home</li>
+                                </a> <br>
+                                <a href="about.html" class="about-footer a-footer" target="_blank">
+                                    <li class="list-footer li2">About</li>
+                                </a> <br>
+                                <a href="media.html" class="contact-footer a-footer" target="_blank">
+                                    <li class="list-footer li3" >Contact</li>
+                                </a> <br>
+                                <a href="favorite.html" class="favorites-footer a-footer" target="_blank">
+                                    <li class="list-footer li4">Blog</li>
+                                </a> <br>
+                                <a href="#li5" class="more-footer a-footer">
+                                    <li class="list-footer li5" id="li5">More</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="footer-flex-items ffi2" style="margin-left: 7%;">
+                        <div class="contact-footer">
+                            <div class="contact-head" >
+                                <ul class="contact-ul">
+                                    
+                                    <li class="li-contact">Contact</li>
+                                </ul> 
+                            </div>
+                            <div class="contacts">
+                                <ul class="ul-contact">
+                                    <a href="#ph-svg" class="ph-no-ul a-ul-c">
+                                        <li class="li-contacts ph-no">Phone no.</li>
+                                    </a> <br>
+                                    <a href="#mail-svg" class="mail-ul a-ul-c">
+                                        <li class="li-contacts email-ul">E-mail</li>
+                                    </a> <br>
+                                    <a href="media.html" class="media-ul a-ul-c" target="_blank">
+                                        <li class="li-contacts social-ul">Social Media</li>
+                                    </a> <br>
+                                    <a href="" class="a-ul-c"><li class="li-contacts"></li></a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-flex-items ffi3">
+                        <div class="more-products-footer">
+                            <div class="more-products-head">
+                                <ul class="ul-products">
+                                    <li class="li-products">
+                                        More Products Made by Me
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="more-products-main-ul-li">
+                                <ul class="products-main-ul">
+                                    <a href="signup.html" class="signup-more-products a-ul-pro">
+                                        <li class="products-main-li signup-li" style="margin-top: -8px;">Sign Up Form</li> 
+                                    </a> <br>
+                                    <a href="nepal.html" class="nepal-more-products a-ul-pro">
+                                        <li class="products-main-li nepal-li">Nepal</li>
+                                    </a> <br>
+                                    <a href="home.html" class="upcoming a-ul-pro">
+                                        <li class="products-main-li upcome">(Up Coming)</li>
+                                    </a> <br>
+                                    <a href="home.html" class="upcoming a-ul-pro">
+                                        <li class="products-main-li upcome">(Up Coming)</li>
+                                    </a> 
+                                    <br><a href="home.html" class="upcoming a-ul-pro">
+                                        <li class="products-main-li upcome">(Up Coming)</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          <script src="default.js"></script>     
+          <script src="nav.js"></script> 
 </body>
 </html>
