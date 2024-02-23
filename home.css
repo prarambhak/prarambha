@@ -85,7 +85,6 @@
     -o-animation: loader 2s linear infinite;
     animation: loader 3s linear infinite;
   }
-  
   #loading-content:after {
     border: 3px solid transparent;
     border-top-color: #84417C;
