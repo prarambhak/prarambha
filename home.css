@@ -314,6 +314,7 @@
         .footer-container-flex{
             display: flex;
             gap: 20px;
+            height: auto;
             
         }
 
