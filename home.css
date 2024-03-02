@@ -369,23 +369,22 @@
     .sec-item2 img{
       width: 665px;
       height: 1500px;
-      max-height: 1070px;
+      max-height: 920px;
       position: relative;
-      top: -83px;
-      left: 32px;
+      top: -85px;
+      left: 26px;
       object-fit: cover;
       filter: grayscale(0.9);
+      max-width: 550px;
   }
     .sec-item2{
       -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjU1LCA4MS45MTcsIDAsIDEpIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDIiIHN0b3AtY29sb3I9InJnYmEoMjUxLCAxNjgsIDMxLCAxKSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgICAgICAgICAgICAgPC9kZWZzPgogICAgICAgICAgICAgICAgPHBhdGggZmlsbD0idXJsKCNzdy1ncmFkaWVudCkiIGQ9Ik0xOS43LC0zNUMyNS40LC0zMC44LDI5LjgsLTI1LjMsMzIuNywtMTkuMkMzNS43LC0xMy4xLDM3LjIsLTYuNiwzOC41LDAuOEMzOS44LDguMSw0MC45LDE2LjEsMzguNSwyMy4yQzM2LjEsMzAuMywzMC4zLDM2LjQsMjMuMywzOS45QzE2LjMsNDMuNCw4LjIsNDQuMywwLjEsNDQuMkMtOC4xLDQ0LjEsLTE2LjEsNDMsLTIxLjUsMzguNkMtMjcsMzQuMiwtMjkuNywyNi41LC0zMy4yLDE5LjVDLTM2LjYsMTIuNSwtNDAuNyw2LjMsLTQyLjQsLTAuOUMtNDQsLTguMSwtNDMuMSwtMTYuMywtMzguOCwtMjEuOEMtMzQuNSwtMjcuMywtMjYuOCwtMzAuMywtMTkuOCwtMzMuNkMtMTIuOCwtMzcsLTYuNCwtNDAuOSwwLjMsLTQxLjRDNywtNDEuOSwxNCwtMzkuMiwxOS43LC0zNVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwczsiIHN0cm9rZT0idXJsKCNzdy1ncmFkaWVudCkiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
       -webkit-mask-repeat: no-repeat;
       z-index: 999;
-      margin-left: 680px;
+      margin-left: 372px;
       bottom: 75px;
       position: relative;
-
-  }
-    
+  } 
     
     .hero-btn{
       display:inline-block;
