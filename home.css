@@ -1,6 +1,31 @@
         /* CSS FOR FONT */
-        @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         /* CSS FOR FONT */
+        *{
+          margin: 0;
+          padding: 0;
+          scroll-behavior: smooth;
+          
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 13px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
 
         /* ------------------------------------------------------- Preload Screen Start:- -------------------------------------------------------*/
 
@@ -85,6 +110,7 @@
     -o-animation: loader 2s linear infinite;
     animation: loader 3s linear infinite;
   }
+  
   #loading-content:after {
     border: 3px solid transparent;
     border-top-color: #84417C;
@@ -123,23 +149,21 @@
   }
   /* -------------------------------------------------------Preload Screen End: ---------------------------------------------------------*/
 
-  *{
-    margin: 0;
-    padding: 0;
-    
-}
+
 
 .nav-bar{
-  
     letter-spacing: 1px;
     font-weight: 300;
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     background-color: #131418;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.1);
     display: flex;
     position: sticky;
     z-index: 10;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*Styling logo*/
@@ -148,8 +172,8 @@
     text-align: center;
 }
 .logo img {
-    height: 3.5rem;
-    margin-left: 25px;
+    height: 4.3rem;
+    margin-left: 85px;
 }
 
 /*Styling Links*/
@@ -307,15 +331,90 @@
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
+/* Section Start */
+    #index-main-body{
+      background-color: #131418;
+      height: 75vh;
+      padding-top: 150px;
+      padding-left: 140px;
+      display: flex;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      position: relative;
+    }
 
-       
-      
+    .sec-item1 .hey-text{
+      font-size: 30px;
+    }
+    .sec-item1 .iam-text{
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+    .sec-item1 .edu-text{
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: #61DAFB;
+    }
+    .sec-item1 .edu-text i{
+      font-size: 30px;
+    }
+    .sec-item1 .description-text{
+      font-size: 18px;
+      width: 390px;
+      text-align: justify;
+      margin-bottom: 30px;
+    }
+
+    .sec-item2 img{
+      width: 665px;
+      height: 1500px;
+      max-height: 1070px;
+      position: relative;
+      top: -83px;
+      left: 32px;
+      object-fit: cover;
+      filter: grayscale(0.9);
+  }
+    .sec-item2{
+      -webkit-mask-image: url(data:image/svg+xml;base64,PCEtLT94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/LS0+CiAgICAgICAgICAgICAgPHN2ZyBpZD0ic3ctanMtYmxvYi1zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSI+CiAgICAgICAgICAgICAgICAgICAgPGRlZnM+IAogICAgICAgICAgICAgICAgICAgICAgICA8bGluZWFyR3JhZGllbnQgaWQ9InN3LWdyYWRpZW50IiB4MT0iMCIgeDI9IjEiIHkxPSIxIiB5Mj0iMCI+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDEiIHN0b3AtY29sb3I9InJnYmEoMjU1LCA4MS45MTcsIDAsIDEpIiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8c3RvcCBpZD0ic3RvcDIiIHN0b3AtY29sb3I9InJnYmEoMjUxLCAxNjgsIDMxLCAxKSIgb2Zmc2V0PSIxMDAlIj48L3N0b3A+CiAgICAgICAgICAgICAgICAgICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgICAgICAgICAgICAgICAgPC9kZWZzPgogICAgICAgICAgICAgICAgPHBhdGggZmlsbD0idXJsKCNzdy1ncmFkaWVudCkiIGQ9Ik0xOS43LC0zNUMyNS40LC0zMC44LDI5LjgsLTI1LjMsMzIuNywtMTkuMkMzNS43LC0xMy4xLDM3LjIsLTYuNiwzOC41LDAuOEMzOS44LDguMSw0MC45LDE2LjEsMzguNSwyMy4yQzM2LjEsMzAuMywzMC4zLDM2LjQsMjMuMywzOS45QzE2LjMsNDMuNCw4LjIsNDQuMywwLjEsNDQuMkMtOC4xLDQ0LjEsLTE2LjEsNDMsLTIxLjUsMzguNkMtMjcsMzQuMiwtMjkuNywyNi41LC0zMy4yLDE5LjVDLTM2LjYsMTIuNSwtNDAuNyw2LjMsLTQyLjQsLTAuOUMtNDQsLTguMSwtNDMuMSwtMTYuMywtMzguOCwtMjEuOEMtMzQuNSwtMjcuMywtMjYuOCwtMzAuMywtMTkuOCwtMzMuNkMtMTIuOCwtMzcsLTYuNCwtNDAuOSwwLjMsLTQxLjRDNywtNDEuOSwxNCwtMzkuMiwxOS43LC0zNVoiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDUwIDUwKSIgc3Ryb2tlLXdpZHRoPSIwIiBzdHlsZT0idHJhbnNpdGlvbjogYWxsIDAuM3MgZWFzZSAwczsiIHN0cm9rZT0idXJsKCNzdy1ncmFkaWVudCkiPjwvcGF0aD4KICAgICAgICAgICAgICA8L3N2Zz4=);
+      -webkit-mask-repeat: no-repeat;
+      z-index: 999;
+      margin-left: 680px;
+      bottom: 75px;
+      position: relative;
+
+  }
+    
+    
+    .hero-btn{
+      display:inline-block;
+      color:#61DAFB;
+      border:1px solid #fff;
+      padding:12px 34px;
+      font-size:1em;
+      background:transparent;
+      position:relative;
+      cursor:pointer;
+      transition:1s;
+      border: 1.5px solid #61DAFB;
+
+  }
+
+  .hero-btn:hover{
+      border:1px solid #61DAFB;
+      background:#61DAFB;
+      transition:1s;
+      color: #fff;
+  }
+  /* Section End */
 
         .footer-container-flex{
             display: flex;
             gap: 20px;
-            height: auto;
-            
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 9999;
         }
 
         .ffia{
@@ -324,7 +423,7 @@
 
         .purpose{
             font-size: 25px;
-            border-bottom: 3px solid blue;
+            border-bottom: 3px solid #61DAFB;
             width: 329.5px;
             margin-bottom: 15px;
             margin-top: 9px;
@@ -374,7 +473,7 @@
         }
 
        .footer-bottom {
-        background-color: #333;
+        background-color: #131418;
         color: #fff;
         padding: 20px;
         height: 205px;
@@ -404,7 +503,7 @@
         display: block;
         width: 0;
         height: 3px;
-        background: blue;
+        background: #61DAFB;
         transition: width 0.3s ease;
      }
      .a-footer:hover::after{
@@ -413,7 +512,7 @@
 
       li.li-myself{
         margin-bottom: 13px;
-        border-bottom: 3px solid blue;
+        border-bottom: 3px solid #61DAFB;
         width: 65px;
         font-size: 25px;
         margin-left: 63px;
@@ -455,7 +554,7 @@
         display: block;
         width: 0;
         height: 3px;
-        background: blue;
+        background: #61DAFB;
         transition: width 0.3s ease;
      }
      .a-ul-c:hover::after{
@@ -501,7 +600,7 @@
 .li-contact{
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #61DAFB;
     width: 83px;
     margin-bottom: 17px;
     margin-top: 10px;
@@ -519,7 +618,7 @@
 }
 
 .li-contacts:hover{
-    /* border-bottom: 3px solid blue; */
+    /* border-bottom: 3px solid #61DAFB; */
     cursor: pointer;
 }
 
@@ -540,8 +639,8 @@
 .li-products{
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 3px solid blue;
-    width: 56.171%;
+    border-bottom: 3px solid #61DAFB;
+    width: 141px;
     margin-bottom: 15px;
     margin-top: 10px;
 }
@@ -584,7 +683,7 @@
     display: block;
     width: 0;
     height: 3px;
-    background: blue;
+    background: #61DAFB;
     transition: width 0.3s ease;
  }
  .a-ul-pro:hover::after{
