@@ -370,10 +370,10 @@
     .sec-item2 img{
       width: 615px;
       height: 1500px;
-      max-height: 544px;
+      max-height: 609px;
       position: relative;
-      top: 42px;
-      left: 0px;
+      top: 50px;
+      left: -10px;
       object-fit: cover;
       filter: grayscale(0.9);
       max-width: 580px;
