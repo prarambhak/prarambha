@@ -1,6 +1,31 @@
         /* CSS FOR FONT */
-        @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         /* CSS FOR FONT */
+        *{
+          margin: 0;
+          padding: 0;
+          scroll-behavior: smooth;
+          
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 13px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
 
         /* ------------------------------------------------------- Preload Screen Start:- -------------------------------------------------------*/
 
@@ -124,23 +149,21 @@
   }
   /* -------------------------------------------------------Preload Screen End: ---------------------------------------------------------*/
 
-  *{
-    margin: 0;
-    padding: 0;
-    
-}
+
 
 .nav-bar{
-  
     letter-spacing: 1px;
     font-weight: 300;
-    height: 4rem;
+    height: 3.5rem;
     width: 100%;
     background-color: #131418;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.1);
     display: flex;
     position: sticky;
     z-index: 10;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*Styling logo*/
@@ -149,8 +172,8 @@
     text-align: center;
 }
 .logo img {
-    height: 3.5rem;
-    margin-left: 25px;
+    height: 3rem;
+    margin-left: 85px;
 }
 
 /*Styling Links*/
@@ -308,14 +331,99 @@
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
-
-       
-      
+/* Section Start */
+    #index-main-body{
+      background-color: #131418;
+      height: 92vh;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .about-me-heading{
+      font-size: 40px;
+      width: 200px;
+      margin: auto;
+      text-transform: uppercase;
+      border-bottom: 5px solid #61DAFB;
+    }
+    .about-container-flex{
+      display: flex;
+      justify-content: space-around;
+      margin-top: 50px;
+    }
+    .description-1{
+      color: #fff;
+      width: 470px;
+      text-align: justify;
+      border: 2px solid rgb(64, 64, 64);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.5);
+    }
+    .description-2{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .small-cont{
+      height: 200px;
+      width: 200px;
+      border: 2px solid rgb(64, 64, 64);
+      border-radius: 15px;
+      transition: .5s;
+      cursor: pointer;
+      box-shadow: 0 0px 3px rgba(255, 255, 255, 0.3);
+      margin: 20px;
+    }
+    .number-works{
+      font-size: 40px;
+    width: 65px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    color: #61DAFB;
+    cursor: pointer;
+    transition: .5s;
+    }
+    .small-cont hr{
+      width: 80%;
+      margin: auto;
+      margin-top: 40px;
+      border: 1px solid rgb(64, 64, 64);
+      cursor: pointer;
+      transition: .5s;
+    }
+    .work-name{
+      color: #fff;
+      width: 100px;
+      text-align: center;
+      font-size: 25px;
+      margin: auto;
+      margin-top: 8px;
+      cursor: pointer;
+      transition: .5s;
+    }
+    .small-cont:hover{
+      border: 2px solid #61DAFB;
+      transform: translateY(5px);
+      box-shadow: 0 0px 7px rgba(255, 255, 255, 0.3);
+    }
+    .small-cont:hover .number-works{
+      color: #fff;
+    }
+    .small-cont:hover hr{
+      border: 1px solid #61DAFB;
+    }
+    .small-cont:hover .work-name{
+      color: #61DAFB;
+    }
+  /* Section End */
 
         .footer-container-flex{
             display: flex;
             gap: 20px;
-            
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 9999;
         }
 
         .ffia{
@@ -324,7 +432,7 @@
 
         .purpose{
             font-size: 25px;
-            border-bottom: 3px solid blue;
+            border-bottom: 3px solid #61DAFB;
             width: 329.5px;
             margin-bottom: 15px;
             margin-top: 9px;
@@ -374,7 +482,7 @@
         }
 
        .footer-bottom {
-        background-color: #333;
+        background-color: #131418;
         color: #fff;
         padding: 20px;
         height: 205px;
@@ -404,7 +512,7 @@
         display: block;
         width: 0;
         height: 3px;
-        background: blue;
+        background: #61DAFB;
         transition: width 0.3s ease;
      }
      .a-footer:hover::after{
@@ -413,7 +521,7 @@
 
       li.li-myself{
         margin-bottom: 13px;
-        border-bottom: 3px solid blue;
+        border-bottom: 3px solid #61DAFB;
         width: 65px;
         font-size: 25px;
         margin-left: 63px;
@@ -455,7 +563,7 @@
         display: block;
         width: 0;
         height: 3px;
-        background: blue;
+        background: #61DAFB;
         transition: width 0.3s ease;
      }
      .a-ul-c:hover::after{
@@ -501,7 +609,7 @@
 .li-contact{
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #61DAFB;
     width: 83px;
     margin-bottom: 17px;
     margin-top: 10px;
@@ -519,7 +627,7 @@
 }
 
 .li-contacts:hover{
-    /* border-bottom: 3px solid blue; */
+    /* border-bottom: 3px solid #61DAFB; */
     cursor: pointer;
 }
 
@@ -540,8 +648,8 @@
 .li-products{
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 3px solid blue;
-    width: 56.171px;
+    border-bottom: 3px solid #61DAFB;
+    width: 141px;
     margin-bottom: 15px;
     margin-top: 10px;
 }
@@ -584,7 +692,7 @@
     display: block;
     width: 0;
     height: 3px;
-    background: blue;
+    background: #61DAFB;
     transition: width 0.3s ease;
  }
  .a-ul-pro:hover::after{
