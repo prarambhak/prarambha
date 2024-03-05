@@ -416,6 +416,78 @@
     .small-cont:hover .work-name{
       color: #61DAFB;
     }
+    #index-main-body-2 {
+      height: 100vh;
+      background: #131418;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+    }
+    #index-main-body-2 .skills-head {
+      width: 122px;
+      border-bottom: 4px solid #fff;
+      margin: auto;
+      padding-top: 30px;
+      font-size: 30px;
+    }
+    .scroll-skill{
+      background: #61DAFB;
+
+      width: 82px;
+      font-size: 25px;
+      position: absolute;
+      border-radius: 5px;
+      padding: 5px 20px;
+      top: 660px;
+      right: 10px;
+      position: fixed;
+      z-index: 9999;
+      cursor: pointer;
+    }
+    .skill{
+      position: relative;
+      left: 130px;
+      margin-bottom: 40px;
+    }
+    .skills-grid{
+      width: 130px;
+    }
+    .container-skill{
+      width: 800%;
+      background: #4f4f4f8a;
+    }
+    .skill-name{
+      color: #fff;
+      font-size: 25px;
+      font-weight: 100;
+    }
+    .skill-num{
+      text-align: right;
+      background: #61dafb;
+      color: #131418;
+      font-size: 18px;
+      box-shadow: 0 0 10px 0 rgba(97, 218, 251, 0.6);
+    }
+    .html{
+      width: 90%;
+    }
+    .css{
+      width: 80%;
+    }
+    .js{
+      width: 50%;
+    }
+    .c{
+      width: 85%;
+    }
+    .cpp{
+      width: 35%;
+    }
+    .php{
+      width: 20%;
+    }
+  
   /* Section End */
 
         .footer-container-flex{
