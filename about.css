@@ -433,13 +433,12 @@
     }
     .scroll-skill{
       background: #61DAFB;
-
       width: 82px;
       font-size: 25px;
       position: absolute;
       border-radius: 5px;
       padding: 5px 20px;
-      top: 660px;
+      top: 620px;
       right: 10px;
       position: fixed;
       z-index: 9999;
