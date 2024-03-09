@@ -1,6 +1,31 @@
         /* CSS FOR FONT */
-        @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
         /* CSS FOR FONT */
+        *{
+          margin: 0;
+          padding: 0;
+          scroll-behavior: smooth;
+          
+      }
+      /* width */
+      ::-webkit-scrollbar {
+        width: 13px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
 
         /* ------------------------------------------------------- Preload Screen Start:- -------------------------------------------------------*/
 
@@ -124,23 +149,21 @@
   }
   /* -------------------------------------------------------Preload Screen End: ---------------------------------------------------------*/
 
-  *{
-    margin: 0;
-    padding: 0;
-    
-}
+
 
 .nav-bar{
-  
     letter-spacing: 1px;
     font-weight: 300;
-    height: 4rem;
+    height: 3.5rem;
     width: 100%;
     background-color: #131418;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 20px rgba(255, 255, 255, 0.1);
     display: flex;
     position: sticky;
     z-index: 10;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*Styling logo*/
@@ -149,8 +172,8 @@
     text-align: center;
 }
 .logo img {
-    height: 3.5rem;
-    margin-left: 25px;
+    height: 3rem;
+    margin-left: 85px;
 }
 
 /*Styling Links*/
@@ -308,14 +331,139 @@
     .toggle .line3{
         transform: rotate(45deg) translate(-5px,-6px);
     }
+/* Section Start */
+    #index-main-body{
+      background-color: #131418;
+      height: 92vh;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .contact-me-heading{
+      font-size: 40px;
+      width: 258px;
+      margin: auto;
+      text-transform: uppercase;
+      border-bottom: 5px solid #61DAFB;
+    }
+    .contact-head-body .b-contact, i{
+      color: #61DAFB;
+    }
+    .contact-1{
+      width: 850px;
+    }
+    .body-flex-main{
+      display: flex;
+      justify-content: space-between;
+    }
+    .contact-head-body{
+      text-align: center;
+      width: 175px;
+      font-size: 30px;
+      border: 3px solid #fff;
+      padding: 5px 30px;
+      border-radius: 10px;
+      transition: .5s;
+      cursor: pointer;
+      position: relative;
+      left: 250px;
+    }
+    .contact-head-body:hover .b-contact, i{
+      color: #fff;
+    }
+    .contact-head-body:hover {
+      background-color: #61DAFB;
+      border: 3px solid #fff;
+      transform: translateY(10px);
+    }
+    .contact-item-1-flex{
+      display: flex;
+      color: #fff;
+      font-size: 25px;
+      margin-top: 50px;
+    }
+    .flex-container-1{
+      flex-basis: 36%;
+      margin-left: 100px;
+    }
+    .flex-container-2{
+      width: 400px;
+    }
+    .item-1-contact, .item-2-contact{
+      margin-bottom: 30px;
+    }
+    .item-1-contact{
+      width: 320px;
+    }
+    .contact-2-map iframe{
+      margin-left: 30px;
+      height: 490px;
+      position: relative;
+      margin-bottom: -60px;
+      bottom: 60px;
+    }
+    .contact-icons{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      top: -95px;
+      height: 87px;
+      width: 650px;
+      margin-left: 105px;
+    }
+    .icons a i{
+      color: #000;
+      font-size: 30px;
+      background-color: #61DAFB;
+      border-radius: 50%;
+      padding: 25px;
+      display: block;
+      height: 35px;
+      width: 35px;
+      text-align: center;
+      box-shadow: 0 0 30px 0 rgba(97, 218, 251, 0.8);
+      transition: .5s;
+    }
+    .icons a i:hover{
+      background-color: #fff;
+      color: #61DAFB;
+      box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.8);
+    }
+    .my-location{
+      position: relative;
+      top: -80px;
+      width: 150px;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      left: 245px;
+      border-bottom: 3px solid #61DAFB;
+      box-shadow: inset 0px 0px 40px 0px #61DAFB;
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+    .icons{
+      transition: .5s;
+    }
+    .icons:hover{
+      transform: translateY(-10px);
+    }
 
-       
-      
+    .icons a{
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+    }
+  
+  /* Section End */
 
         .footer-container-flex{
             display: flex;
             gap: 20px;
-            
+            box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 9999;
         }
 
         .ffia{
@@ -324,7 +472,7 @@
 
         .purpose{
             font-size: 25px;
-            border-bottom: 3px solid blue;
+            border-bottom: 3px solid #61DAFB;
             width: 329.5px;
             margin-bottom: 15px;
             margin-top: 9px;
@@ -339,7 +487,6 @@
         .about-myself{
             margin-top: 15px;
             font-size: 18px;
-            font: weight 800px;
             text-transform: uppercase;
         }
 
@@ -374,7 +521,7 @@
         }
 
        .footer-bottom {
-        background-color: #333;
+        background-color: #131418;
         color: #fff;
         padding: 20px;
         height: 205px;
@@ -404,7 +551,7 @@
         display: block;
         width: 0;
         height: 3px;
-        background: blue;
+        background: #61DAFB;
         transition: width 0.3s ease;
      }
      .a-footer:hover::after{
@@ -413,7 +560,7 @@
 
       li.li-myself{
         margin-bottom: 13px;
-        border-bottom: 3px solid blue;
+        border-bottom: 3px solid #61DAFB;
         width: 65px;
         font-size: 25px;
         margin-left: 63px;
@@ -455,7 +602,7 @@
         display: block;
         width: 0;
         height: 3px;
-        background: blue;
+        background: #61DAFB;
         transition: width 0.3s ease;
      }
      .a-ul-c:hover::after{
@@ -501,7 +648,7 @@
 .li-contact{
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 3px solid blue;
+    border-bottom: 3px solid #61DAFB;
     width: 83px;
     margin-bottom: 17px;
     margin-top: 10px;
@@ -519,7 +666,7 @@
 }
 
 .li-contacts:hover{
-    /* border-bottom: 3px solid blue; */
+    /* border-bottom: 3px solid #61DAFB; */
     cursor: pointer;
 }
 
@@ -540,8 +687,8 @@
 .li-products{
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 3px solid blue;
-    width: 56.171px;
+    border-bottom: 3px solid #61DAFB;
+    width: 141px;
     margin-bottom: 15px;
     margin-top: 10px;
 }
@@ -584,7 +731,7 @@
     display: block;
     width: 0;
     height: 3px;
-    background: blue;
+    background: #61DAFB;
     transition: width 0.3s ease;
  }
  .a-ul-pro:hover::after{
