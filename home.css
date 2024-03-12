@@ -309,7 +309,7 @@
         transition: all 0.5s ease 0.8s;
     }
     .nav-links li:nth-child(6){
-        transition: all 0.5s ease 0.9s;
+        transition: all 0.5s ease 1s;
         margin: 0;
     }
     .nav-links li:nth-child(7){
