@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #DCF2F1; /* Background color */
+        color: #0F1035; /* Text color */
+    }
+    form {
+        max-width: 400px;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #365486; /* Form background color */
+        position: absolute;
+        top: 53.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 4px 4px 4px rgba(127, 199, 217, 0.8);
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #7FC7D9; /* Input field border color */
+        border-radius: 4px;
+        box-sizing: border-box;
+        background-color: #DCF2F1; /* Input field background color */
+        color: #0F1035; /* Input field text color */
+    }
+    input[type="submit"] {
+        background-color: #7FC7D9; /* Submit button background color */
+        color: #0F1035; /* Submit button text color */
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        transition: 0.1s ease-in-out 0.1s;
+        margin-top: 15px;
+    }
+    input[type="submit"]:hover {
+        background-color: #0F1035; /* Submit button hover background color */
+        color: #DCF2F1;
+    }
+
+    input,select{
+        outline : 1px solid #365486;
+        color: #0F1035;
+        font-size: 1rem;
+    }
+
+    label{
+        color: #DCF2F1;
+    }
+
+    .password-toggle {
+        position: relative;
+    }
+    .password-toggle input[type="password"] {
+        padding-right: 40px;
+    }
+    .password-toggle .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #0F1035; /* Password toggle button color */
+    }
+</style>
+</head>
+<body>
+
+<form id="login-form">
+
+    <div class="title">
+        Login
+    </div>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <div class="password-toggle">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="toggle-password" onclick="togglePasswordVisibility('password')">Show</span>
+    </div>
+
+    <input type="submit" value="Login">
+</form>
+
+<script>
+    function togglePasswordVisibility(inputId) {
+        const input = document.getElementById(inputId);
+        const toggleBtn = document.querySelector(`#${inputId} + .toggle-password`);
+        if (input.type === "password") {
+            input.type = "text";
+            toggleBtn.textContent = "Hide";
+        } else {
+            input.type = "password";
+            toggleBtn.textContent = "Show";
+        }
+    }
+</script>
+
+</body>
+</html>
